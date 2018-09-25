@@ -1,4 +1,6 @@
-# test
+# VueJS Tailwind CSS Setup
+
+Setting Up VueJS with Tailwind CSS
 
 ## Project setup
 ```
