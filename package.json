@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "tailwind": "tailwind build ./src/assets/styles/tailwind.css -c ./tailwind.js -o ./src/assets/styles/output.css",
+    "serve": "npm run tailwind && vue-cli-service serve",
+    "build": "npm run tailwind && vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
     "vue": "^2.5.17"
@@ -14,6 +16,7 @@
     "@vue/cli-plugin-babel": "^3.0.1",
     "@vue/cli-plugin-eslint": "^3.0.1",
     "@vue/cli-service": "^3.0.1",
+    "tailwindcss": "^0.6.6",
     "vue-template-compiler": "^2.5.17"
   },
   "eslintConfig": {
